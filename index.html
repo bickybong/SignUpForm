@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id="left">
+        <div id="logo">
+            <img src="cupid.png" alt="cupid logo" ></img>
+            <h1>Cupids</h1>
+        </div>
+    </div>
+    <div id="right">
+        <div id="top">
+            <p> Your love life starts here!</p>
+            <p> Find your <em>dream partner</em> by signing up now</p></div>
+        <div id="mid">
+            <h3>Lets do this!</h3>
+            <form action="" method="post" id = "form1">
+                <div class="form">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name = "firstName" id ="firstName" required>
+                </div>
+                <div class="form">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name = "lastName" id ="lastName">
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input type="email" name = "email" id ="email">
+                </div>
+                <label for="phoneNo">Phone number</label>
+                <input type="tel" name = "phoneNo" id ="phoneNo">
+                <label for="password">Password</label>
+                <input type="password" name = "password" id ="password">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" name = "confirmPassword" id ="confirmPassword">
+            </form>
+        </div>
+        <div id="bot">
+            <button id="but1" type="submit" form="#form1">Create Account</button>
+            <p>Already have an account? <a href="">Log in!</a></p>
+            
+        </div>
+    </div>
+</body>
+</html>
