@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="left">
+        <div id="logo">
+            <img src="cupid.png" alt="cupid logo" ></img>
+            <h1>Cupids</h1>
+        </div>
+    </div>
+    <div id="right">
+        <div id="top">
+            <p> Your love life starts here!</p>
+            <p> Find your <em>dream partner</em> by signing up now</p></div>
+        <div id="mid">
+            <h3>Lets do this!</h3>
+            <form action="" method="post" id = "form1">
+                <div id="leftForm">
+                    <div class="form">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="form">
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="email"  required>
+                    </div>
+                    <div class="form">
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" name="password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                    </div>
+                </div>
+
+                <div class="rightForm">
+                    <div class="form">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="form">
+                        <label for="telphone">Phone Number: </label>
+                        <input type="tel" id="tel" name="tel"  pattern="[0-9]{8}" required>
+                    </div>
+                    <div class="form">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="bot">
+            <button id="but1" type="submit" form="form1">Create Account</button>
+            <p>Already have an account? <a href="">Log in!</a></p>
+            
+        </div>
+    </div>
+</body>
+</html>
