@@ -76,15 +76,21 @@ body{
 
 form{
     display: flex;
-    flex-flow: row ;
-    gap: 0.5rem;
-    max-width: 100vw;
-    ;
+    width: 60vw;
 }
 
-.form{
+#right #mid form div div{
+    height: 3.5rem;
     display: flex;
-    flex-flow: column wrap;
-    width: 10rem;
-    height: 1rem;
+    flex-flow: column;
+    width: 25vw;
+    font-size: clamp(0.1rem, 3vw, 1rem);
+}
+
+input:invalid{
+    border: 2px rgb(188, 58, 58) solid;
+}
+
+input{
+    border-radius: 0.5rem;
 }
